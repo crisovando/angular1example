@@ -1,7 +1,7 @@
 #Angular 1.x Example
 Easy example of Angular 1.x
   
-Powered by [https://ar.linkedin.com/in/cesarcasas](César Casas)
+Powered by [César Casas](https://ar.linkedin.com/in/cesarcasas)
 # Install & Run
 ## Install
 ```bash
