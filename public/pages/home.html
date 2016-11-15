@@ -1,7 +1,9 @@
 <h1>Home</h1>
 <div ng-controller="searchController as controller">
+    
     <button ng-click="controller.search()">Buscar</button>
-    <table>
+
+    <table ng-show="results">
         <tr>
             <th>ID</th>
             <th>Name</th>

@@ -15,15 +15,15 @@ controllers.controller("searchController", ["$scope",
 
         $scope.key = "q";
 
-        $scope.results = [];
+        $scope.results = null;
 
         this.search = function () {
-            console.log('buscando');
+
             searchService.search()
-                .then(function(results){
+                .then(function (results) {
                     $scope.results = results.data;
                 })
-                .catch(function(err){
+                .catch(function (err) {
                     Notification.error(err);
                 });
         };
