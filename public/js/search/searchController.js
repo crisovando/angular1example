@@ -12,15 +12,16 @@ controllers.controller("searchController", ["$scope",
               Notification) {
 
         var _this = this;
-        $scope.items = [];
+
         $scope.key = "q";
 
+        $scope.results = [];
 
         this.search = function () {
             console.log('buscando');
             searchService.search()
-                .then(function(result){
-                    console.log(result);
+                .then(function(results){
+                    $scope.results = results.data;
                 })
                 .catch(function(err){
                     Notification.error(err);
