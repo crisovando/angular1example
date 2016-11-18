@@ -8,7 +8,7 @@ services.service("searchService", ["$http", "api", function ($http, api) {
             params.page = 1;
             params.limit = 30;
         }
-        return $http.get(api + "/search", {params: params});
+        return $http.get("/mock/comments.json", {params: params});
     }
 
     this.account = function (params) {
