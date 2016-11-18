@@ -10,4 +10,11 @@ services.service("searchService", ["$http", "api", function ($http, api) {
         }
         return $http.get(api + "/search", {params: params});
     }
+
+    this.account = function (params) {
+        if (typeof params !== "undefined") {
+            params.email = 1;
+        }
+        return $http.get(api + "/search", {params: params});
+    }
 }]);

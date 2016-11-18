@@ -18,7 +18,7 @@ controllers.controller("searchController", ["$scope",
 
         this.search = function () {
             console.log('buscando');
-            searchService.search()
+            searchService.account()
                 .then(function(result){
                     console.log(result);
                 })

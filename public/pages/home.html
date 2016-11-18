@@ -1,4 +1,29 @@
 <h1>Home</h1>
 <div ng-controller="searchController as sControl">
-    <button ng-click="sControl.search()">Buscar</button>
+  <div class="row">
+    <div class="col-lg-9">
+
+    </div>
+    <div class="col-lg-3">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+            <i class="fa fa-bell fa-fw"></i> Ultimos Destino
+        </div>
+        <!-- /.panel-heading -->
+        <div class="panel-body">
+            <div class="list-group">
+              <a href="#" ng-repeat="busqueda in busquedas" class="list-group-item">
+                <i class="fa fa-comment fa-fw"></i> {{busqueda.destino}}
+                <span class="pull-right text-muted small"><em>4 minutes ago</em>
+                </span>
+              </a>
+            </div>
+            <!-- /.list-group -->
+            <a href="#" class="btn btn-default btn-block">Ver todos los destinos buscados</a>
+        </div>
+        <!-- /.panel-body -->
+      </div>
+    </div>
+  </div>
+
 </div>
